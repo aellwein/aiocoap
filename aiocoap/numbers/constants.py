@@ -25,7 +25,7 @@ COAP_PORT = 5683
 #   | PROBING_RATE      | 1 Byte/second |
 #   +-------------------+---------------+
 
-ACK_TIMEOUT = 2.0
+ACK_TIMEOUT = 48.0
 """The time, in seconds, to wait for an acknowledgement of a
 confirmable message. The inter-transmission time doubles
 for each retransmission."""
@@ -33,7 +33,7 @@ for each retransmission."""
 ACK_RANDOM_FACTOR = 1.5
 """Timeout multiplier for anti-synchronization."""
 
-MAX_RETRANSMIT = 4
+MAX_RETRANSMIT = 2
 """The number of retransmissions of confirmable messages to
 non-multicast endpoints before the infrastructure assumes no
 acknowledgement will be received."""
